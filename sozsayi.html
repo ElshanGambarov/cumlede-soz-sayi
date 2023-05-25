@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sozlerin sayi</title>
+  <script>
+    function countWords(sentence) {
+      var words = sentence.split(" ");
+      return words.length;
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="myInput" />
+  <button onclick="countInput()">sozlerin sayini tap</button>
+  
+  <script>
+    function countInput() {
+      var inputSentence = document.getElementById("myInput").value;
+      var wordCount = countWords(inputSentence);
+      alert("Soz sayi: " + wordCount);
+    }
+  </script>
+</body>
+</html>
+
